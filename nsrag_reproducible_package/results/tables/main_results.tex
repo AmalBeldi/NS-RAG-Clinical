@@ -1,0 +1,18 @@
+\begin{tabular}{llrrrrrr}
+\toprule
+method & task & fact_f1 & hallucination_rate & explanation_coverage & minimality_ratio & verification_success_rate & context_tokens \\
+\midrule
+graph_linearization & qa & 0.417 & 0.000 & 1.000 & 0.000 & 1.000 & 43.333 \\
+graph_linearization & summarization & 0.000 & 0.000 & 1.000 & 0.000 & 1.000 & 52.667 \\
+llm_no_context & qa & 0.417 & 1.000 & 0.000 & 0.000 & 0.000 & 0.000 \\
+llm_no_context & summarization & 0.000 & 1.000 & 0.000 & 0.000 & 0.000 & 0.000 \\
+ns_rag_full & qa & 0.417 & 0.000 & 1.000 & 1.000 & 1.000 & 43.333 \\
+ns_rag_full & summarization & 0.000 & 0.000 & 1.000 & 0.717 & 1.000 & 52.667 \\
+ns_rag_no_minimal & qa & 0.417 & 0.000 & 1.000 & 1.000 & 1.000 & 43.333 \\
+ns_rag_no_minimal & summarization & 0.000 & 0.000 & 1.000 & 1.000 & 1.000 & 52.667 \\
+ns_rag_no_verify & qa & 0.417 & 0.000 & 1.000 & 0.000 & 1.000 & 43.333 \\
+ns_rag_no_verify & summarization & 0.000 & 0.000 & 1.000 & 0.000 & 1.000 & 52.667 \\
+textual_rag & qa & 0.417 & 1.000 & 0.000 & 0.000 & 0.000 & 21.333 \\
+textual_rag & summarization & 0.000 & 1.000 & 0.000 & 0.000 & 0.000 & 21.333 \\
+\bottomrule
+\end{tabular}

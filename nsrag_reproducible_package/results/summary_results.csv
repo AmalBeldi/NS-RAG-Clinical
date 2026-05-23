@@ -1,0 +1,13 @@
+method,task,fact_f1,hallucination_rate,explanation_coverage,minimality_ratio,verification_success_rate,context_tokens
+graph_linearization,qa,0.4166666666666667,0.0,1.0,0.0,1.0,43.333333333333336
+graph_linearization,summarization,0.0,0.0,1.0,0.0,1.0,52.666666666666664
+llm_no_context,qa,0.4166666666666667,1.0,0.0,0.0,0.0,0.0
+llm_no_context,summarization,0.0,1.0,0.0,0.0,0.0,0.0
+ns_rag_full,qa,0.4166666666666667,0.0,1.0,1.0,1.0,43.333333333333336
+ns_rag_full,summarization,0.0,0.0,1.0,0.7172619047619048,1.0,52.666666666666664
+ns_rag_no_minimal,qa,0.4166666666666667,0.0,1.0,1.0,1.0,43.333333333333336
+ns_rag_no_minimal,summarization,0.0,0.0,1.0,1.0,1.0,52.666666666666664
+ns_rag_no_verify,qa,0.4166666666666667,0.0,1.0,0.0,1.0,43.333333333333336
+ns_rag_no_verify,summarization,0.0,0.0,1.0,0.0,1.0,52.666666666666664
+textual_rag,qa,0.4166666666666667,1.0,0.0,0.0,0.0,21.333333333333332
+textual_rag,summarization,0.0,1.0,0.0,0.0,0.0,21.333333333333332

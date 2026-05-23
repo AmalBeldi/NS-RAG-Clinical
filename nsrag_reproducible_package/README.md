@@ -1,15 +1,30 @@
-# NS-RAG Reproducible Prototype
+# NS-RAG: Graph-Grounded Neuro-Symbolic RAG for Clinical QA
 
-Lightweight reproducible package for the NS-RAG experimental protocol.
+## Overview
 
-It includes: synthetic de-identified EHR-like data, patient graph construction, graph summarization, RDF conversion, textual RAG, graph linearization, NS-RAG full, verification, minimal explanations, metrics, ablations, figures and LaTeX tables.
+NS-RAG is a graph-grounded neuro-symbolic framework for explainable and verifiable clinical question answering over EHR data.
 
-## Run
+The framework integrates:
+
+- EHR graph construction
+- graph summarization
+- RDF grounding
+- graph-based retrieval
+- neuro-symbolic generation
+- formal explainability
+- graph-guided verification
+
+## Repository Structure
+
+data/               -> datasets
+src/                -> pipeline source code
+notebooks/          -> experiments and figures
+results/            -> generated outputs
+paper_snippets/     -> LaTeX tables and figures
+
+## Installation
+
 ```bash
 pip install -r requirements.txt
-python src/run_experiment.py --input data/sample_ehr/patients.jsonl --out results
-python src/run_ablation.py --input data/sample_ehr/patients.jsonl --out results
-python src/make_figures.py --results results/summary_results.csv --ablation results/ablation_summary.csv --out results/figures
-```
-
-The included data are synthetic and intended only for reproducibility demonstration. Replace `patients.jsonl` with your preprocessed MIMIC-III/i2b2 instances using the same schema.
+python src/run_experiment.py
+python src/run_ablation.py
